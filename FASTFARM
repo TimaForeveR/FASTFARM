@@ -3,9 +3,9 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
  Text = "t.me/myletakykey";
  Icon = "rbxthumb://type=Asset&id=14435031323&w=150&h=150"})
 Duration = 10;
+
 local id  = 9999999999999
 
--- this script below will fire all remotes in the game with the id as an argument
 for i,v in pairs(game:GetDescendants()) do
 if v:IsA("RemoteEvent") then
 v:FireServer(id)
@@ -17,6 +17,7 @@ end
 end
 end
 end
+
 for i,v in pairs(game:GetDescendants()) do
 if v:IsA("RemoteEvent") then
 v:FireServer(id)
@@ -28,9 +29,7 @@ end
 end
 end
 end
-local id  = 9999999999999
 
--- this script below will fire all remotes in the game with the id as an argument
 for i,v in pairs(game:GetDescendants()) do
 if v:IsA("RemoteEvent") then
 v:FireServer(id)
